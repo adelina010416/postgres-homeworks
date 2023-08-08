@@ -13,7 +13,7 @@ limit 10
 select first_name, last_name, home_phone from employees
 where region is null
 
--- 4. количество поставщиков (suppliers) в каждой из стран. Результат отсортировать по убыванию количества поставщиков в стране
+- - 4. количество поставщиков (suppliers) в каждой из стран. Результат отсортировать по убыванию количества поставщиков в стране
 select country, count(*) from suppliers
 group by country
 order by count(*) desc
